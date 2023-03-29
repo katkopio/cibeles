@@ -26,3 +26,13 @@
     box-shadow: 0 0.5rem 1rem var(--gray);
   }
 }
+
+.vertical_bar {
+  // vertical_bar must be inside a flex container
+  width: 0.5rem;
+  align-self: stretch;
+
+  &__yellow {
+    background-color: var(--yellow-3);
+  }
+}

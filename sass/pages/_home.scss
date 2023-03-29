@@ -1,0 +1,152 @@
+.container {
+  background-image: url(../img/home-fountain.png);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+
+  .blurb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8rem;
+    gap: 1.6rem;
+    background: var(--white-faded);
+
+    position: absolute;
+    width: 78rem;
+    top: 25vh;
+    height: 50vh;
+    left: 13rem;
+
+    &__text {
+      text-align: justify;
+    }
+  }
+}
+
+// .home {}
+
+.why {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 7.5rem 10rem;
+  gap: 50px;
+
+  &__support {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4rem;
+    gap: 1.6rem;
+    flex: 1;
+
+    &__body {
+      text-align: justify;
+    }
+  }
+
+  &__redirect {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4rem;
+    gap: 1.6rem;
+    flex: 1;
+
+    &__body {
+      text-align: justify;
+    }
+  }
+}
+
+.kfi {
+  background-color: var(--yellow-2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7.5rem 10rem;
+  gap: 5.6rem;
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 1.6rem;
+  }
+
+  &__metrics {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5rem;
+  }
+
+  &__metric {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 12rem;
+    gap: 1rem;
+
+    background-color: var(--white-faded);
+    border-radius: 8px;
+
+    flex-grow: 1;
+
+    &__header {
+      font-size: 5.4rem;
+      text-align: center;
+    }
+    &__body {
+      font-size: 2.4rem;
+      text-align: center;
+    }
+  }
+
+  &__source {
+    align-self: end;
+    color: var(--blue-2);
+    &__link {
+      font-style: italic;
+    }
+  }
+}
+
+.strengths {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7.5rem 10rem;
+  gap: 2.4rem;
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 5rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.6rem 0rem;
+    gap: 1.6rem;
+    list-style: disc;
+    margin-left: 1.6rem;
+  }
+}

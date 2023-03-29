@@ -16,9 +16,11 @@
       height: 4rem;
     }
     &__title {
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: var(--white);
+      font-size: 2rem;
+
+      &__white {
+        color: var(--white);
+      }
     }
   }
 
@@ -34,8 +36,12 @@
     }
 
     &__item {
-      color: var(--white);
       font-size: 1.6rem;
+      color: var(--blue-4);
+
+      &__white {
+        color: var(--white);
+      }
     }
 
     &__link {
@@ -53,41 +59,42 @@
   }
 }
 
-.container {
-  background-image: url(../img/home-fountain.png);
-  background-size: cover;
-  height: 100vh;
-  position: relative;
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0rem;
+  background-color: var(--blue-4);
 
-  .blurb {
+  &__list {
+    list-style: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
-    padding: 8rem;
-    gap: 1.6rem;
-    background: var(--white-faded);
+    align-items: center;
+    padding: 0rem;
+    gap: 5.6rem;
+  }
 
-    position: absolute;
-    width: 78rem;
-    top: 25vh;
-    left: 13rem;
+  &__item {
+  }
 
-    &__heading {
-      font-weight: 700;
-      font-size: 3.6rem;
-      color: var(--blue-4);
+  &__link {
+    &:link,
+    &:visited {
+      color: var(--white);
+      text-decoration: none;
     }
-    &__text {
-      font-size: 16px;
-      text-align: justify;
-      color: var(--blue-3);
+
+    &:hover,
+    &:active {
+      color: var(--gray);
     }
   }
-}
 
-.home {
-}
-
-.footer {
+  &__copyright {
+    text-align: center;
+    color: var(--white-faded);
+  }
 }
