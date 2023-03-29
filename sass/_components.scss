@@ -1,0 +1,28 @@
+.button {
+  &,
+  &:link,
+  &:visited {
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 50px;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.8rem;
+    border: none;
+    cursor: pointer;
+    background: var(--blue-3);
+    color: var(--white);
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem var(--gray);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem var(--gray);
+  }
+}
