@@ -79,9 +79,7 @@ body {
   align-items: center; }
   .header .logo {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    padding: 0px;
     gap: 16px; }
     .header .logo__img {
       width: 4rem;
@@ -116,20 +114,18 @@ body {
   padding: 2rem 0rem;
   background-color: var(--blue-4); }
   .footer__list {
-    list-style: none;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 0rem;
-    gap: 5.6rem; }
+    gap: 5.6rem;
+    list-style: none; }
   .footer__link:link, .footer__link:visited {
     color: var(--white);
     text-decoration: none; }
   .footer__link:hover, .footer__link:active {
     color: var(--gray); }
   .footer__copyright {
-    text-align: center;
     color: var(--white-faded); }
 
 .button, .button:link, .button:visited {

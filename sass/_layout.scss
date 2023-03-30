@@ -6,9 +6,7 @@
 
   .logo {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    padding: 0px;
     gap: 16px;
 
     &__img {
@@ -73,13 +71,12 @@
   background-color: var(--blue-4);
 
   &__list {
-    list-style: none;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 0rem;
     gap: 5.6rem;
+    list-style: none;
   }
 
   &__link {
@@ -96,7 +93,6 @@
   }
 
   &__copyright {
-    text-align: center;
     color: var(--white-faded);
   }
 }
