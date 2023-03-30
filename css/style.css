@@ -169,7 +169,7 @@ body {
     gap: 1.6rem;
     background: var(--white-faded);
     position: absolute;
-    width: 78rem;
+    width: 50vw;
     top: 25vh;
     height: 50vh;
     left: 13rem; }
@@ -179,14 +179,12 @@ body {
 .why {
   background-color: var(--white);
   display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 7.5rem 10rem;
   gap: 50px; }
   .why__support {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 4rem;
     gap: 1.6rem;
     flex: 1; }
@@ -206,19 +204,17 @@ body {
   background-color: var(--yellow-2);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 7.5rem 10rem;
   gap: 5.6rem; }
   .kfi__intro {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 0px;
     gap: 1.6rem; }
   .kfi__metrics {
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
     padding: 0px;
     gap: 5rem; }
@@ -230,7 +226,7 @@ body {
     gap: 1rem;
     background-color: var(--white-faded);
     border-radius: 8px;
-    flex-grow: 1; }
+    flex: 1; }
     .kfi__metric__header {
       font-size: 5.4rem;
       text-align: center; }
@@ -242,11 +238,15 @@ body {
     color: var(--blue-2); }
     .kfi__source__link {
       font-style: italic; }
+      .kfi__source__link:link, .kfi__source__link:visited {
+        color: var(--blue-2);
+        text-decoration: none; }
+      .kfi__source__link:hover, .kfi__source__link:active {
+        color: var(--blue-1); }
 
 .strengths {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: 7.5rem 10rem;
   gap: 2.4rem; }
   .strengths__intro {
@@ -256,7 +256,6 @@ body {
     gap: 1.6rem; }
   .strengths__container {
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 0px;
     gap: 5rem; }
@@ -264,7 +263,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 1.6rem 0rem;
+    padding: 1.6rem;
     gap: 1.6rem;
-    list-style: disc;
-    margin-left: 1.6rem; }
+    list-style: disc; }

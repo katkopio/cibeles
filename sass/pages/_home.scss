@@ -14,7 +14,7 @@
     background: var(--white-faded);
 
     position: absolute;
-    width: 78rem;
+    width: 50vw;
     top: 25vh;
     height: 50vh;
     left: 13rem;
@@ -30,7 +30,6 @@
 .why {
   background-color: var(--white);
   display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 7.5rem 10rem;
   gap: 50px;
@@ -38,7 +37,6 @@
   &__support {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 4rem;
     gap: 1.6rem;
     flex: 1;
@@ -66,7 +64,6 @@
   background-color: var(--yellow-2);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 7.5rem 10rem;
   gap: 5.6rem;
@@ -74,14 +71,13 @@
   &__intro {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 0px;
     gap: 1.6rem;
   }
 
   &__metrics {
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
     padding: 0px;
     gap: 5rem;
@@ -97,7 +93,7 @@
     background-color: var(--white-faded);
     border-radius: 8px;
 
-    flex-grow: 1;
+    flex: 1;
 
     &__header {
       font-size: 5.4rem;
@@ -114,6 +110,16 @@
     color: var(--blue-2);
     &__link {
       font-style: italic;
+      &:link,
+      &:visited {
+        color: var(--blue-2);
+        text-decoration: none;
+      }
+
+      &:hover,
+      &:active {
+        color: var(--blue-1);
+      }
     }
   }
 }
@@ -121,7 +127,6 @@
 .strengths {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: 7.5rem 10rem;
   gap: 2.4rem;
 
@@ -134,7 +139,6 @@
 
   &__container {
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 0px;
     gap: 5rem;
@@ -144,9 +148,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 1.6rem 0rem;
+    padding: 1.6rem;
     gap: 1.6rem;
     list-style: disc;
-    margin-left: 1.6rem;
   }
 }
