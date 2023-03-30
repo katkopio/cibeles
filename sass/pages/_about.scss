@@ -1,0 +1,155 @@
+// .about {}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  padding: 7.5rem 10rem;
+  gap: 1.6rem;
+  text-align: justify;
+
+  &__par1 {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.6rem;
+    }
+
+    // &__img {}
+  }
+
+  &__par2 {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+
+    // &__img {}
+  }
+}
+
+.tradition {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem;
+  gap: 1rem;
+  background-color: var(--blue-3);
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    text-align: center;
+  }
+  &__header {
+    color: var(--white);
+  }
+  &__copy {
+    color: var(--white-faded);
+  }
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  padding: 7.5rem 10rem;
+  gap: 3.6rem;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  &__image {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    // &__img { }
+
+    &__caption {
+      font-style: italic;
+      text-align: center;
+      color: var(--blue-2);
+    }
+  }
+
+  &__timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    &__circle {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background-color: var(--yellow-2);
+    }
+
+    &__copy {
+      text-align: justify;
+    }
+  }
+}
+
+.officers {
+  display: flex;
+  flex-direction: column;
+  padding: 7.5rem 10rem;
+  gap: 2.4rem;
+  background-color: var(--yellow-2);
+
+  &__header {
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    gap: 15rem;
+    justify-content: center;
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+}
+
+.officer {
+  text-align: center;
+  color: var(--blue-4);
+
+  &__name {
+    font-weight: 500;
+  }
+  &__position {
+    font-style: italic;
+    font-weight: 400;
+  }
+}

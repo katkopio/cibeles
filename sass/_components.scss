@@ -6,8 +6,6 @@
     display: inline-block;
     border-radius: 50px;
     transition: all 0.2s;
-    position: relative;
-    font-size: 1.8rem;
     border: none;
     cursor: pointer;
     background: var(--blue-3);
@@ -21,16 +19,16 @@
 
   &:active,
   &:focus {
-    outline: none;
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem var(--gray);
   }
 }
 
 .vertical_bar {
-  // vertical_bar must be inside a flex container
+  // vertical_bar must be inside a flex container with flex-direction: row | row-reverse;
   width: 0.5rem;
   align-self: stretch;
+  background-color: var(--white-faded);
 
   &__yellow {
     background-color: var(--yellow-3);
