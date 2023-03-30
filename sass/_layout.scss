@@ -17,6 +17,7 @@
     }
     &__title {
       font-size: 2rem;
+      color: var(--blue-3);
 
       &__white {
         color: var(--white);
@@ -35,25 +36,29 @@
       font-weight: 500;
     }
 
-    &__item {
-      font-size: 1.6rem;
-      color: var(--blue-4);
-
-      &__white {
-        color: var(--white);
-      }
-    }
-
     &__link {
       &:link,
       &:visited {
-        color: var(--white);
+        color: var(--blue-4);
         text-decoration: none;
       }
 
       &:hover,
       &:active {
-        color: var(--gray);
+        color: var(--blue-2);
+      }
+
+      &__white {
+        &:link,
+        &:visited {
+          color: var(--white);
+          text-decoration: none;
+        }
+
+        &:hover,
+        &:active {
+          color: var(--gray);
+        }
       }
     }
   }
@@ -75,9 +80,6 @@
     align-items: center;
     padding: 0rem;
     gap: 5.6rem;
-  }
-
-  &__item {
   }
 
   &__link {

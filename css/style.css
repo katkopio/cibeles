@@ -87,7 +87,8 @@ body {
       width: 4rem;
       height: 4rem; }
     .header .logo__title {
-      font-size: 2rem; }
+      font-size: 2rem;
+      color: var(--blue-3); }
       .header .logo__title__white {
         color: var(--white); }
   .header .navigation__list {
@@ -96,15 +97,15 @@ body {
     gap: 6rem; }
   .header .navigation__active {
     font-weight: 500; }
-  .header .navigation__item {
-    font-size: 1.6rem;
-    color: var(--blue-4); }
-    .header .navigation__item__white {
-      color: var(--white); }
   .header .navigation__link:link, .header .navigation__link:visited {
-    color: var(--white);
+    color: var(--blue-4);
     text-decoration: none; }
   .header .navigation__link:hover, .header .navigation__link:active {
+    color: var(--blue-2); }
+  .header .navigation__link__white:link, .header .navigation__link__white:visited {
+    color: var(--white);
+    text-decoration: none; }
+  .header .navigation__link__white:hover, .header .navigation__link__white:active {
     color: var(--gray); }
 
 .footer {

@@ -2,7 +2,7 @@
   "name": "cibeles",
   "version": "1.0.0",
   "description": "Landing page for Cibeles website 2023",
-  "main": "index.js",
+  "main": "home.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
