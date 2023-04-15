@@ -28,13 +28,13 @@
       </div>
       <nav class="navigation">
         <ul class="navigation__list">
-          <li class="navigation__active">
+          <li>
             <a href="home.html" class="navigation__link">Home</a>
           </li>
           <li>
             <a href="about.html" class="navigation__link">About Us</a>
           </li>
-          <li>
+          <li class="navigation__active">
             <a href="services.html" class="navigation__link">Services</a>
           </li>
           <li>
@@ -48,6 +48,102 @@
         </ul>
       </nav>
     </header>
+
+    <main class="services" id="services">
+      <div class="services__header">
+        <h1>Our Services</h1>
+        <p>
+          Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          vulputate libero et velit interdum, ac aliquet odio mattis.
+        </p>
+      </div>
+      <div class="services__cards">
+        <div class="services__card">
+          <h2>Fire & Allied Perils</h2>
+          <p class>
+            Fire and Lightning, Earthquake Fire, Earthquake Shock; Typhoon;
+            Flood; Extended Coverage...
+          </p>
+          <a href="#overlay" class="button">Learn More</a>
+        </div>
+        <div class="services__card">
+          <h2>Engineering Insurance</h2>
+          <p class>
+            Contractor’s All Risk; Erection All Risk; Machinery Breakdown; Loss
+            of Profits Following Machinery Breakdown...
+          </p>
+          <a href="#overlay" class="button">Learn More</a>
+        </div>
+        <div class="services__card">
+          <h2>Motor Car Insurance</h2>
+          <p class>
+            Comprehensive (Own Damage & Theft) Coverage; Compulsory Third Party
+            Liability...
+          </p>
+          <a href="#overlay" class="button">Learn More</a>
+        </div>
+        <div class="services__card">
+          <h2>
+            Online Compulsory Motor Car Third Party Liability Insurance (CTPL)
+          </h2>
+          <a href="#overlay" class="button">Learn More</a>
+        </div>
+        <div class="services__card">
+          <h2>Marine Insurance</h2>
+          <p class>Marine Cargo, Merchandise Floater.</p>
+          <a href="#overlay" class="button">Learn More</a>
+        </div>
+        <div class="services__card">
+          <h2>Casualty Insurance</h2>
+          <p class>
+            Personal Accident – Individual, Group, Businessman’s, Travel,
+            Student, Unnamed Passengers
+          </p>
+          <a href="#overlay" class="button">Learn More</a>
+        </div>
+        <div class="services__card">
+          <h2>Bonds</h2>
+          <p class>
+            Fidelity; Surety; Bidders; Performance; Attachment; Replevin &
+            Others. Flood; Extended Coverage...
+          </p>
+          <a href="#overlay" class="button">Learn More</a>
+        </div>
+        <div class="services__card">
+          <h2>Micro Insurance</h2>
+          <a href="#overlay" class="button">Learn More</a>
+        </div>
+      </div>
+    </main>
+
+    <div id="overlay" class="overlay">
+      <a href="#services" class="overlay__background">&nbsp;</a>
+      <div class="overlay__content">
+        <div class="overlay__heading">
+          <h2>Casualty Insurance</h2>
+          <a href="#services" class="overlay__button">
+            <svg class="overlay__icon">
+              <use xlink:href="img/sprite.svg#icon-resize-100"></use>
+            </svg>
+          </a>
+        </div>
+        <ul class="overlay__list">
+          <li>Personal Accident</li>
+          <ul class="overlay__list">
+            <li>
+              Individual, Group, Businessman’s, Travel, Student, Unnamed
+              Passengers
+            </li>
+          </ul>
+          <li>Comprehensive General Liability</li>
+          <li>Errors & Omissions (Professional Indemnity)</li>
+          <li>Fidelity Guarantee</li>
+          <li>Golf Hole-In-One, Miscellaneous Coverage</li>
+          <li>Property Floater</li>
+        </ul>
+        <a href="#services" class="button overlay__close">Close</a>
+      </div>
+    </div>
 
     <footer class="footer">
       <ul class="footer__list">

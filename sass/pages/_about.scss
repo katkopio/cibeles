@@ -91,15 +91,9 @@
     flex-direction: column;
     gap: 2.4rem;
 
-    &__item {
-      display: flex;
-      flex-direction: column;
-    }
-
     &__container {
       display: flex;
       flex-direction: row;
-      justify-content: flex-start;
       align-items: center;
       gap: 1rem;
     }
