@@ -35,3 +35,25 @@
     background-color: var(--yellow-3);
   }
 }
+
+.small-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  &__input {
+    height: 4rem;
+    padding: 1rem;
+  }
+}
+
+.large-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  &__textarea {
+    padding: 1rem;
+    resize: none;
+  }
+}

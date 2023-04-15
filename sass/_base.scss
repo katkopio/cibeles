@@ -86,3 +86,23 @@ body {
   font-size: 1.6rem;
   color: var(--blue-3);
 }
+
+label {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: var(--blue-4);
+}
+
+input,
+textarea {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.4rem;
+  color: #bababa;
+
+  background-color: #fff;
+  width: 100%;
+  border-radius: 0.4rem;
+  border: 1px solid #cbd2e0;
+}
