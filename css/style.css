@@ -112,6 +112,10 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  .header__sticky {
+    position: sticky;
+    top: 0;
+    background-color: #fff; }
   .header .logo {
     display: flex;
     align-items: center;
@@ -316,7 +320,8 @@ textarea:not(:focus):not(:placeholder-shown):valid {
     align-items: flex-start;
     padding: 1.6rem;
     gap: 1.6rem;
-    list-style: disc; }
+    list-style: disc;
+    flex: 1; }
 
 .about-us {
   display: flex;
