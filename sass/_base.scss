@@ -99,10 +99,32 @@ textarea {
   font-weight: 400;
   line-height: 1.6;
   font-size: 1.4rem;
-  color: #bababa;
+  color: var(--blue-4);
+  outline: none;
 
   background-color: #fff;
   width: 100%;
   border-radius: 0.4rem;
   border: 1px solid #cbd2e0;
+}
+
+/* 
+:not(:focus) -> when user leaves input form
+:not(:placeholder-shown) -> and there's no placeholder text (i.e., there is input)
+and the entered text is invalid/valid
+do the following...
+*/
+
+input:not(:focus):not(:placeholder-shown):invalid,
+textarea:not(:focus):not(:placeholder-shown):invalid {
+  border-color: hsl(0, 76%, 50%);
+}
+
+input:not(:focus):not(:placeholder-shown):valid,
+textarea:not(:focus):not(:placeholder-shown):valid {
+  border-color: hsl(120, 76%, 50%);
+}
+
+.send_mail {
+  align-self: flex-start;
 }

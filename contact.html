@@ -54,39 +54,50 @@
         <div class="contact-us__container">
           <div>
             <h1>Get In Touch</h1>
-            <p>Yorem ipsum dolor sit amet consectetur</p>
+            <p>
+              Yorem ipsum dolor sit amet consectetur. Note that all fields
+              marked with * are required.
+            </p>
           </div>
           <form class="contact-us__form">
             <div class="small-form">
-              <label for="email">Email Address</label>
+              <label for="email">Email Address *</label>
               <input
                 class="small-form__input"
-                type="text"
+                type="email"
                 id="email"
                 name="email"
                 placeholder="Email Address"
+                required
+                aria-required="true"
               />
             </div>
             <div class="small-form">
-              <label for="subject">Subject</label>
+              <label for="subject">Subject *</label>
               <input
                 class="small-form__input"
                 type="text"
                 id="subject"
                 name="subject"
                 placeholder="Subject"
+                required
+                aria-required="true"
+                pattern="\S+.*"
               />
             </div>
             <div class="large-form">
-              <label for="message">Message</label>
+              <label for="message">Message *</label>
               <textarea
                 class="large-form__textarea"
                 id="message"
                 name="message"
                 placeholder="Message"
                 rows="5"
+                required
+                aria-required="true"
               ></textarea>
             </div>
+            <button class="button send_mail" type="submit">Send Inquiry</button>
           </form>
           <div class="contact-us__email">
             <svg class="contact-us__email--icon">
@@ -126,8 +137,8 @@
               <p>Binondo, Manila</p>
             </div>
             <div class="location__content">
-              <p>Tel.: 63-2-2421631-40</p>
-              <p>Fax: 63-2-2420718</p>
+              <p>Tel.: 63-2-82421631-40</p>
+              <p>Fax: 63-2-82420718</p>
             </div>
             <a href="#" class="location__redirect">
               <p class="location__redirect--text">View on Google Maps</p>
@@ -205,8 +216,7 @@
               <p>Calamba City, Laguna</p>
             </div>
             <div class="location__content">
-              <p>Tel.: 63-2-2421631-40</p>
-              <p>Fax: 63-2-2420718</p>
+              <p>Tel.: 63-49-521-8559</p>
             </div>
             <a href="#" class="location__redirect">
               <p class="location__redirect--text">View on Google Maps</p>
