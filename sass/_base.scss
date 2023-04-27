@@ -35,6 +35,26 @@
   --white-true: rgba(255, 255, 255, 1);
 }
 
+@function base-font-size($pixels) {
+  @return percentage($pixels / 16px);
+}
+
+/*
+MEDIA QUERY MANAGER (max-width)
+0-600px:         Phone
+600px-900px:     Tablet (portrait mode)
+900px-1200px:    Tablet (landscape mode)
+1200px-1800px:   Normal styles apply (Desktop first approach)
+1800px++ :       Big desktop
+
+ORDER OF WORKING ON MIX-INS: Base + typography > general layout + grid > page layout > components
+*/
+
+$phone: 37.5em; //600px
+$tablet-portrait: 56.25em; //900px
+$laptop: 75em; // 1200px
+$big-desktop: 112.5em; // 1800px
+
 // UNIVERSAL RESET
 
 * {
@@ -50,7 +70,19 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; //1rem = 10px
+  font-size: base-font-size(10px);
+
+  @media only screen and (max-width: $laptop) {
+    font-size: base-font-size(9px);
+  }
+
+  @media only screen and (max-width: $tablet-portrait) {
+    font-size: base-font-size(8px);
+  }
+
+  @media only screen and (min-width: $big-desktop) {
+    font-size: base-font-size(12px);
+  }
 }
 
 // DECLARE FONTS
@@ -85,46 +117,4 @@ body {
   line-height: 1.6;
   font-size: 1.6rem;
   color: var(--blue-3);
-}
-
-label {
-  font-weight: 500;
-  font-size: 1.4rem;
-  color: var(--blue-4);
-}
-
-input,
-textarea {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 400;
-  line-height: 1.6;
-  font-size: 1.4rem;
-  color: var(--blue-4);
-  outline: none;
-
-  background-color: #fff;
-  width: 100%;
-  border-radius: 0.4rem;
-  border: 1px solid #cbd2e0;
-}
-
-/* 
-:not(:focus) -> when user leaves input form
-:not(:placeholder-shown) -> and there's no placeholder text (i.e., there is input)
-and the entered text is invalid/valid
-do the following...
-*/
-
-input:not(:focus):not(:placeholder-shown):invalid,
-textarea:not(:focus):not(:placeholder-shown):invalid {
-  border-color: hsl(0, 76%, 50%);
-}
-
-input:not(:focus):not(:placeholder-shown):valid,
-textarea:not(:focus):not(:placeholder-shown):valid {
-  border-color: hsl(120, 76%, 50%);
-}
-
-.send_mail {
-  align-self: flex-start;
 }

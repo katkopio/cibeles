@@ -57,3 +57,68 @@
     resize: none;
   }
 }
+
+label {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: var(--blue-4);
+}
+
+input,
+textarea {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.4rem;
+  color: var(--blue-4);
+  outline: none;
+
+  background-color: #fff;
+  width: 100%;
+  border-radius: 0.4rem;
+  border: 1px solid #cbd2e0;
+}
+
+/* 
+:not(:focus) -> when user leaves input form
+:not(:placeholder-shown) -> and there's no placeholder text (i.e., there is input)
+and the entered text is invalid/valid
+do the following...
+*/
+
+input:not(:focus):not(:placeholder-shown):invalid,
+textarea:not(:focus):not(:placeholder-shown):invalid {
+  border-color: hsl(0, 76%, 50%);
+}
+
+input:not(:focus):not(:placeholder-shown):valid,
+textarea:not(:focus):not(:placeholder-shown):valid {
+  border-color: hsl(120, 76%, 50%);
+}
+
+.send_mail {
+  align-self: flex-start;
+}
+
+.hamburger {
+  visibility: hidden;
+  display: none;
+
+  &__bar {
+    width: 20px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: var(--blue-3);
+
+    &--white {
+      background-color: var(--white);
+    }
+  }
+
+  @media only screen and (max-width: $phone) {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

@@ -3,6 +3,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 6rem;
+
+  @media only screen and (max-width: $phone) {
+    padding: 2.4rem;
+  }
+
+  &__title {
+    text-decoration: none;
+  }
 
   &__sticky {
     position: sticky;
@@ -34,6 +43,8 @@
       list-style: none;
       display: flex;
       gap: 6rem;
+      align-items: center;
+      text-align: center;
     }
 
     &__active {
@@ -65,6 +76,11 @@
         }
       }
     }
+
+    @media only screen and (max-width: $phone) {
+      visibility: hidden;
+      display: none;
+    }
   }
 }
 
@@ -76,6 +92,10 @@
   padding: 2rem 0rem;
   background-color: var(--blue-4);
 
+  @media only screen and (max-width: $phone) {
+    gap: 2rem;
+  }
+
   &__list {
     display: flex;
     justify-content: center;
@@ -83,6 +103,11 @@
     padding: 0rem;
     gap: 5.6rem;
     list-style: none;
+
+    @media only screen and (max-width: $phone) {
+      flex-direction: column;
+      gap: 1rem;
+    }
   }
 
   &__link {
