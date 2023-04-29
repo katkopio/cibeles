@@ -124,6 +124,8 @@ body {
     gap: 6rem;
     align-items: center;
     text-align: center; }
+  .header .navigation__list > * {
+    white-space: nowrap; }
   .header .navigation__active {
     font-weight: 500; }
   .header .navigation__link:link, .header .navigation__link:visited {
@@ -195,6 +197,10 @@ body {
   background-color: var(--white-faded); }
   .vertical_bar__yellow {
     background-color: var(--yellow-3); }
+  @media only screen and (max-width: 37.5em) {
+    .vertical_bar {
+      display: none;
+      visibility: hidden; } }
 
 .small-form {
   display: flex;
@@ -265,10 +271,11 @@ textarea:not(:focus):not(:placeholder-shown):valid {
       gap: 0.5rem; } }
 
 .container {
+  display: flex;
+  flex-direction: column;
   background-image: url(../img/home-fountain.png);
   background-size: cover;
-  height: 100vh;
-  position: relative; }
+  height: 100vh; }
   .container .blurb {
     display: flex;
     flex-direction: column;
@@ -277,11 +284,16 @@ textarea:not(:focus):not(:placeholder-shown):valid {
     padding: 8rem;
     gap: 1.6rem;
     background: var(--white-faded);
-    position: absolute;
-    width: 50vw;
-    top: 25vh;
-    height: 50vh;
-    left: 13rem; }
+    margin: 10rem;
+    width: calc(70% - 20rem); }
+    @media only screen and (max-width: 56.25em) {
+      .container .blurb {
+        width: calc(100% - 10rem);
+        margin: 10vh 5rem;
+        padding: 6rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .container .blurb {
+        padding: 4rem; } }
     .container .blurb__text {
       text-align: justify; }
 
@@ -290,13 +302,24 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   display: flex;
   align-items: center;
   padding: 7.5rem 10rem;
-  gap: 50px; }
+  gap: 5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .why {
+      padding: 6.5rem 8rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .why {
+      flex-direction: column;
+      padding: 6rem 7.5rem;
+      gap: 3rem; } }
   .why__support {
     display: flex;
     flex-direction: column;
     padding: 4rem;
     gap: 1.6rem;
     flex: 1; }
+    @media only screen and (max-width: 56.25em) {
+      .why__support {
+        padding: 0; } }
     .why__support__body {
       text-align: justify; }
   .why__redirect {
@@ -306,6 +329,9 @@ textarea:not(:focus):not(:placeholder-shown):valid {
     padding: 4rem;
     gap: 1.6rem;
     flex: 1; }
+    @media only screen and (max-width: 56.25em) {
+      .why__redirect {
+        padding: 0; } }
     .why__redirect__body {
       text-align: justify; }
 
@@ -316,6 +342,12 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   align-items: center;
   padding: 7.5rem 10rem;
   gap: 5.6rem; }
+  @media only screen and (max-width: 56.25em) {
+    .kfi {
+      padding: 6.5rem 8rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .kfi {
+      padding: 6rem 7.5rem; } }
   .kfi__intro {
     display: flex;
     flex-direction: column;
@@ -325,8 +357,11 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   .kfi__metrics {
     display: flex;
     align-items: flex-start;
-    padding: 0px;
-    gap: 5rem; }
+    gap: 5rem;
+    flex-wrap: wrap; }
+    @media only screen and (max-width: 56.25em) {
+      .kfi__metrics {
+        gap: 2.5rem; } }
   .kfi__metric {
     display: flex;
     flex-direction: column;
@@ -336,12 +371,21 @@ textarea:not(:focus):not(:placeholder-shown):valid {
     background-color: var(--white-faded);
     border-radius: 8px;
     flex: 1; }
+    @media only screen and (max-width: 56.25em) {
+      .kfi__metric {
+        padding: 5rem 6rem; } }
     .kfi__metric__header {
       font-size: 5.4rem;
       text-align: center; }
+      @media only screen and (max-width: 56.25em) {
+        .kfi__metric__header {
+          font-size: 4rem; } }
     .kfi__metric__body {
       font-size: 2.4rem;
       text-align: center; }
+      @media only screen and (max-width: 56.25em) {
+        .kfi__metric__body {
+          font-size: 2rem; } }
   .kfi__source {
     align-self: end;
     color: var(--blue-2); }
@@ -359,6 +403,12 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   padding: 7.5rem 10rem;
   gap: 2.4rem;
   background-color: var(--white); }
+  @media only screen and (max-width: 56.25em) {
+    .strengths {
+      padding: 6.5rem 8rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .strengths {
+      padding: 6rem 7.5rem; } }
   .strengths__intro {
     display: flex;
     flex-direction: column;
@@ -369,6 +419,12 @@ textarea:not(:focus):not(:placeholder-shown):valid {
     align-items: center;
     padding: 0px;
     gap: 5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .strengths__container {
+        flex-direction: column;
+        gap: 1.6rem;
+        align-items: flex-start;
+        padding: 1.6rem; } }
   .strengths__list {
     display: flex;
     flex-direction: column;
@@ -377,6 +433,9 @@ textarea:not(:focus):not(:placeholder-shown):valid {
     gap: 1.6rem;
     list-style: disc;
     flex: 1; }
+    @media only screen and (max-width: 37.5em) {
+      .strengths__list {
+        padding: 0; } }
 
 .about-us {
   display: flex;
@@ -471,7 +530,8 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   .officers__col {
     display: flex;
     flex-direction: column;
-    gap: 2.4rem; }
+    gap: 2.4rem;
+    flex: 1; }
 
 .officer {
   text-align: center;

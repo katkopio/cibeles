@@ -47,6 +47,10 @@
       text-align: center;
     }
 
+    &__list > * {
+      white-space: nowrap;
+    }
+
     &__active {
       font-weight: 500;
     }
