@@ -8,10 +8,24 @@
   text-align: justify;
   background-color: var(--white);
 
+  @media only screen and (max-width: $tablet-portrait) {
+    padding: 6.5rem 8rem;
+    gap: 2.5rem;
+  }
+
+  @media only screen and (max-width: $phone) {
+    padding: 6rem 7.5rem;
+  }
+
   &__par1 {
     display: flex;
     align-items: center;
     gap: 5rem;
+
+    @media only screen and (max-width: $tablet-portrait) {
+      flex-direction: column;
+      gap: 2.5rem;
+    }
 
     &__text {
       display: flex;
@@ -20,7 +34,10 @@
       gap: 1.6rem;
     }
 
-    // &__img {}
+    &__img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 
   &__par2 {
@@ -28,7 +45,15 @@
     align-items: center;
     gap: 5rem;
 
-    // &__img {}
+    @media only screen and (max-width: $tablet-portrait) {
+      flex-direction: column-reverse;
+      gap: 2.5rem;
+    }
+
+    &__img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -38,6 +63,14 @@
   padding: 10rem;
   gap: 1rem;
   background-color: var(--blue-3);
+
+  @media only screen and (max-width: $tablet-portrait) {
+    padding: 6.5rem;
+  }
+
+  @media only screen and (max-width: $phone) {
+    padding: 5rem;
+  }
 
   &__text {
     display: flex;
@@ -60,6 +93,14 @@
   gap: 3.6rem;
   background-color: var(--white);
 
+  @media only screen and (max-width: $tablet-portrait) {
+    padding: 6.5rem 8rem;
+  }
+
+  @media only screen and (max-width: $phone) {
+    padding: 6rem 7.5rem;
+  }
+
   &__header {
     display: flex;
     flex-direction: column;
@@ -72,6 +113,11 @@
     justify-content: space-between;
     align-items: center;
     gap: 5rem;
+
+    @media only screen and (max-width: $tablet-portrait) {
+      flex-direction: column;
+      gap: 2.4rem;
+    }
   }
 
   &__image {
@@ -79,7 +125,10 @@
     flex-direction: column;
     gap: 1rem;
 
-    // &__img { }
+    &__img {
+      max-width: 100%;
+      height: auto;
+    }
 
     &__caption {
       font-style: italic;
@@ -120,6 +169,15 @@
   gap: 2.4rem;
   background-color: var(--yellow-2);
 
+  @media only screen and (max-width: $tablet-portrait) {
+    padding: 6.5rem 8rem;
+  }
+
+  @media only screen and (max-width: $phone) {
+    padding: 6rem 7.5rem;
+    gap: 1.6rem;
+  }
+
   &__header {
     text-align: center;
   }
@@ -128,6 +186,11 @@
     display: flex;
     gap: 15rem;
     justify-content: center;
+
+    @media only screen and (max-width: $phone) {
+      flex-direction: column;
+      gap: 1.6rem;
+    }
   }
 
   &__col {
