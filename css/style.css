@@ -600,6 +600,12 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   padding: 7.5rem 10rem;
   gap: 4.5rem;
   background-color: var(--yellow-2); }
+  @media only screen and (max-width: 56.25em) {
+    .services {
+      padding: 6.5rem 8rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .services {
+      padding: 6rem 7.5rem; } }
   .services__header {
     display: flex;
     flex-direction: column;
@@ -654,6 +660,14 @@ textarea:not(:focus):not(:placeholder-shown):valid {
     left: 50%;
     opacity: 0;
     transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 56.25em) {
+      .overlay__content {
+        width: 65vw;
+        padding: 4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .overlay__content {
+        width: 75vw;
+        padding: 2rem; } }
   .overlay:target {
     opacity: 1;
     visibility: visible; }
