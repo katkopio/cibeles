@@ -701,7 +701,7 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   .contact-us__container {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2.5rem;
     flex: 1 50%;
     padding-left: 10rem; }
   .contact-us iframe {
@@ -713,36 +713,38 @@ textarea:not(:focus):not(:placeholder-shown):valid {
     flex-direction: column;
     gap: 1.6rem; }
   .contact-us__email {
-    background-color: var(--white-faded);
-    border-radius: 0.8rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 8rem;
-    gap: 1rem;
+    color: var(--blue-2);
+    font-style: italic;
+    text-decoration: none; }
+  .contact-us__email:hover {
     color: var(--blue-4); }
-    .contact-us__email--icon {
-      height: 2rem;
-      width: 2rem;
-      fill: var(--blue-4); }
-    .contact-us__email--redirect {
-      color: var(--blue-2); }
+  .contact-us__note {
+    font-size: 1rem;
+    align-self: end; }
 
 .locations {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  grid-gap: 5rem;
   padding: 10rem;
-  gap: 5rem;
   background-color: var(--blue-3); }
   .locations__header {
+    align-self: center;
     color: var(--white); }
-
-.column {
-  display: flex;
-  flex-direction: column;
-  gap: 5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .locations__header {
+        text-align: center; } }
+    @media only screen and (max-width: 37.5em) {
+      .locations__header {
+        align-self: end; } }
+  @media only screen and (max-width: 56.25em) {
+    .locations {
+      grid-template: 1fr 1fr 1fr / 1fr 1fr;
+      padding: 6.5rem 8rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .locations {
+      grid-template: min-content repeat(5, 1fr)/1fr;
+      padding: 6rem 7.5rem; } }
 
 .location {
   display: flex;
@@ -750,6 +752,10 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   align-items: flex-start;
   padding: 0rem;
   gap: 1.2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .location {
+      text-align: center;
+      align-items: center; } }
   .location__office {
     display: flex;
     align-items: center;
