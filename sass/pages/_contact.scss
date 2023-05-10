@@ -5,18 +5,38 @@
   height: 90vh;
   background-color: var(--white);
 
+  @media only screen and (max-width: $tablet-portrait) {
+    flex-direction: column-reverse;
+    height: auto;
+    gap: 0rem;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
     flex: 1 50%;
     padding-left: 10rem;
+
+    @media only screen and (max-width: $tablet-portrait) {
+      padding-left: 0;
+      padding: 6.5rem 8rem;
+    }
+
+    @media only screen and (max-width: $phone) {
+      padding: 6rem 7.5rem;
+    }
   }
 
   iframe {
     height: 100%;
     width: 100%;
     flex: 1 50%;
+
+    @media only screen and (max-width: $tablet-portrait) {
+      height: 30vh;
+      flex: 0 1 auto;
+    }
   }
 
   &__form {
@@ -64,6 +84,7 @@
   @media only screen and (max-width: $tablet-portrait) {
     grid-template: 1fr 1fr 1fr / 1fr 1fr;
     padding: 6.5rem 8rem;
+    align-items: center;
   }
 
   @media only screen and (max-width: $phone) {

@@ -698,16 +698,32 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   gap: 5rem;
   height: 90vh;
   background-color: var(--white); }
+  @media only screen and (max-width: 56.25em) {
+    .contact-us {
+      flex-direction: column-reverse;
+      height: auto;
+      gap: 0rem; } }
   .contact-us__container {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
     flex: 1 50%;
     padding-left: 10rem; }
+    @media only screen and (max-width: 56.25em) {
+      .contact-us__container {
+        padding-left: 0;
+        padding: 6.5rem 8rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .contact-us__container {
+        padding: 6rem 7.5rem; } }
   .contact-us iframe {
     height: 100%;
     width: 100%;
     flex: 1 50%; }
+    @media only screen and (max-width: 56.25em) {
+      .contact-us iframe {
+        height: 30vh;
+        flex: 0 1 auto; } }
   .contact-us__form {
     display: flex;
     flex-direction: column;
@@ -740,7 +756,8 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   @media only screen and (max-width: 56.25em) {
     .locations {
       grid-template: 1fr 1fr 1fr / 1fr 1fr;
-      padding: 6.5rem 8rem; } }
+      padding: 6.5rem 8rem;
+      align-items: center; } }
   @media only screen and (max-width: 37.5em) {
     .locations {
       grid-template: min-content repeat(5, 1fr)/1fr;
