@@ -128,15 +128,10 @@ body {
       display: none; } }
 
 .navigation__burger {
-  visibility: hidden;
-  display: none; }
+  visibility: hidden; }
   @media only screen and (max-width: 56.25em) {
     .navigation__burger {
-      visibility: visible;
-      display: grid;
-      grid-template: min-content / min-content;
-      justify-items: center;
-      align-items: center; } }
+      visibility: visible; } }
 
 .nav-standard__list {
   list-style: none;
@@ -169,7 +164,9 @@ body {
   display: none; }
 
 .burger__button {
-  grid-area: 1 / 1;
+  position: fixed;
+  top: 2rem;
+  right: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,7 +181,9 @@ body {
   background-color: var(--white); }
 
 .burger__background {
-  grid-area: 1 / 1;
+  position: fixed;
+  top: 2.25rem;
+  right: 2.75rem;
   height: 6rem;
   width: 6rem;
   border-radius: 50%;
@@ -222,7 +221,7 @@ body {
 
 .burger__link:link, .burger__link:visited {
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--white);
   text-decoration: none;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--white) 50%);

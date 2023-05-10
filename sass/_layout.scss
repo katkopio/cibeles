@@ -51,14 +51,9 @@
 
   &__burger {
     visibility: hidden;
-    display: none;
 
     @media only screen and (max-width: $tablet-portrait) {
       visibility: visible;
-      display: grid;
-      grid-template: min-content / min-content;
-      justify-items: center;
-      align-items: center;
     }
   }
 }
@@ -113,7 +108,9 @@
   }
 
   &__button {
-    grid-area: 1 / 1;
+    position: fixed;
+    top: 2rem;
+    right: 2.5rem;
 
     display: flex;
     justify-content: center;
@@ -132,7 +129,9 @@
   }
 
   &__background {
-    grid-area: 1 / 1;
+    position: fixed;
+    top: 2.25rem;
+    right: 2.75rem;
 
     height: 6rem;
     width: 6rem;
@@ -181,7 +180,7 @@
     &:link,
     &:visited {
       font-size: 3rem;
-      font-weight: 300;
+      font-weight: 400;
       color: var(--white);
       text-decoration: none;
       background-image: linear-gradient(
