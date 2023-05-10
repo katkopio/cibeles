@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <header class="header header__sticky" id="nav">
+    <header class="header header__sticky">
       <div class="logo">
         <a href="home.html">
           <img src="img/logo.png" alt="Logo" class="logo__img" />
@@ -30,31 +30,50 @@
           <h1 class="logo__title">Cibeles Insurance Corporation</h1>
         </a>
       </div>
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li>
-            <a href="home.html" class="navigation__link">Home</a>
-          </li>
-          <li>
-            <a href="about.html" class="navigation__link">About Us</a>
-          </li>
-          <li class="navigation__active">
-            <a href="services.html" class="navigation__link">Services</a>
-          </li>
-          <li>
-            <a href="https://ctpl.cibeles.com.ph/" class="navigation__link"
-              >Buy CTPL</a
-            >
-          </li>
-          <li>
-            <a href="contact.html" class="navigation__link">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="hamburger">
-        <div class="hamburger__bar"></div>
-        <div class="hamburger__bar"></div>
-        <div class="hamburger__bar"></div>
+      <div class="navigation">
+        <nav class="navigation__standard nav-standard">
+          <ul class="nav-standard__list">
+            <li>
+              <a href="home.html" class="nav-standard__link">Home</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-standard__link">About Us</a>
+            </li>
+            <li class="nav-standard__active">
+              <a href="services.html" class="nav-standard__link">Services</a>
+            </li>
+            <li>
+              <a href="https://ctpl.cibeles.com.ph/" class="nav-standard__link"
+                >Buy CTPL</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" class="nav-standard__link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="navigation__burger burger">
+          <input type="checkbox" class="burger__checkbox" id="navi-toggle" />
+          <label for="navi-toggle" class="burger__button">
+            <span class="burger__icon">&nbsp;</span>
+          </label>
+          <div class="burger__background">&nbsp;</div>
+          <nav class="burger__nav">
+            <ul class="burger__list">
+              <li><a href="home.html" class="burger__link">Home</a></li>
+              <li><a href="about.html" class="burger__link">About</a></li>
+              <li><a href="services.html" class="burger__link">Services</a></li>
+              <li>
+                <a href="https://ctpl.cibeles.com.ph/" class="burger__link"
+                  >Buy CTPL</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="burger__link">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 

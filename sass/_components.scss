@@ -104,26 +104,3 @@ textarea:not(:focus):not(:placeholder-shown):valid {
 .send_mail {
   align-self: flex-start;
 }
-
-.hamburger {
-  visibility: hidden;
-  display: none;
-
-  &__bar {
-    width: 20px;
-    height: 2px;
-    border-radius: 10px;
-    background-color: var(--blue-3);
-
-    &--white {
-      background-color: var(--white);
-    }
-  }
-
-  @media only screen and (max-width: $phone) {
-    visibility: visible;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-}
