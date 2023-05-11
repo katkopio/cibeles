@@ -415,7 +415,7 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   @media only screen and (max-width: 37.5em) {
     .why {
       flex-direction: column;
-      padding: 6rem 7.5rem;
+      padding: 5.5rem 7rem;
       gap: 3rem; } }
   .why__support {
     display: flex;
@@ -453,7 +453,7 @@ textarea:not(:focus):not(:placeholder-shown):valid {
       padding: 6.5rem 8rem; } }
   @media only screen and (max-width: 37.5em) {
     .kfi {
-      padding: 6rem 7.5rem; } }
+      padding: 5.5rem 7rem; } }
   .kfi__intro {
     display: flex;
     flex-direction: column;
@@ -514,7 +514,7 @@ textarea:not(:focus):not(:placeholder-shown):valid {
       padding: 6.5rem 8rem; } }
   @media only screen and (max-width: 37.5em) {
     .strengths {
-      padding: 6rem 7.5rem; } }
+      padding: 5.5rem 7rem; } }
   .strengths__intro {
     display: flex;
     flex-direction: column;
@@ -556,7 +556,7 @@ textarea:not(:focus):not(:placeholder-shown):valid {
       gap: 2.5rem; } }
   @media only screen and (max-width: 37.5em) {
     .about-us {
-      padding: 6rem 7.5rem; } }
+      padding: 5.5rem 7rem; } }
   .about-us__par1 {
     display: flex;
     align-items: center;
@@ -618,7 +618,7 @@ textarea:not(:focus):not(:placeholder-shown):valid {
       padding: 6.5rem 8rem; } }
   @media only screen and (max-width: 37.5em) {
     .history {
-      padding: 6rem 7.5rem; } }
+      padding: 5.5rem 7rem; } }
   .history__header {
     display: flex;
     flex-direction: column;
@@ -672,7 +672,7 @@ textarea:not(:focus):not(:placeholder-shown):valid {
       padding: 6.5rem 8rem; } }
   @media only screen and (max-width: 37.5em) {
     .officers {
-      padding: 6rem 7.5rem;
+      padding: 5.5rem 7rem;
       gap: 1.6rem; } }
   .officers__header {
     text-align: center; }
@@ -711,7 +711,7 @@ textarea:not(:focus):not(:placeholder-shown):valid {
       padding: 6.5rem 8rem; } }
   @media only screen and (max-width: 37.5em) {
     .services {
-      padding: 6rem 7.5rem; } }
+      padding: 5.5rem 7rem; } }
   .services__header {
     display: flex;
     flex-direction: column;
@@ -821,7 +821,7 @@ textarea:not(:focus):not(:placeholder-shown):valid {
         padding: 6.5rem 8rem; } }
     @media only screen and (max-width: 37.5em) {
       .contact-us__container {
-        padding: 6rem 7.5rem; } }
+        padding: 5.5rem 7rem; } }
   .contact-us iframe {
     height: 100%;
     width: 100%;
@@ -867,7 +867,7 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   @media only screen and (max-width: 37.5em) {
     .locations {
       grid-template: min-content repeat(5, 1fr)/1fr;
-      padding: 6rem 7.5rem; } }
+      padding: 5.5rem 7rem; } }
 
 .location {
   display: flex;
