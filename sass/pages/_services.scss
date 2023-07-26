@@ -11,7 +11,7 @@
   }
 
   @media only screen and (max-width: $phone) {
-    padding: 5.5rem 7rem;
+    padding: 3rem 5.5rem;
   }
 
   &__header {
@@ -89,7 +89,6 @@
 
     @media only screen and (max-width: $phone) {
       width: 75vw;
-      padding: 2rem;
     }
   }
 
@@ -130,5 +129,9 @@
 
   &__close {
     align-self: start;
+
+    @media only screen and (max-width: $phone) {
+      align-self: center;
+    }
   }
 }

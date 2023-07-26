@@ -63,6 +63,7 @@
 
 .locations {
   display: grid;
+  grid-auto-flow: column;
   grid-template: 1fr 1fr / 1fr 1fr 1fr;
   grid-gap: 5rem;
   padding: 10rem;
@@ -125,6 +126,11 @@
 
   &__content {
     color: var(--white-faded);
+
+    &--phone {
+      color: inherit;
+      text-decoration: none;
+    }
   }
 
   &__redirect {
