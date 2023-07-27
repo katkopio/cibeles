@@ -80,6 +80,10 @@
     @media only screen and (max-width: $phone) {
       align-self: end;
     }
+
+    @media only screen and (min-width: $big-desktop) {
+      text-align: center;
+    }
   }
 
   @media only screen and (max-width: $tablet-portrait) {
@@ -92,6 +96,10 @@
     grid-template: min-content repeat(5, 1fr) / 1fr;
     padding: 5.5rem 7rem;
   }
+
+  @media only screen and (min-width: $big-desktop) {
+    padding: 10rem 25rem;
+  }
 }
 
 .location {
@@ -102,6 +110,11 @@
   gap: 1.2rem;
 
   @media only screen and (max-width: $tablet-portrait) {
+    text-align: center;
+    align-items: center;
+  }
+
+  @media only screen and (min-width: $big-desktop) {
     text-align: center;
     align-items: center;
   }

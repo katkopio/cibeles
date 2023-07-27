@@ -14,6 +14,10 @@
     padding: 3rem 5.5rem;
   }
 
+  @media only screen and (min-width: $big-desktop) {
+    padding: 7rem 20rem;
+  }
+
   &__header {
     display: flex;
     flex-direction: column;

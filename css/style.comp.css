@@ -393,7 +393,7 @@ textarea:not(:focus):not(:placeholder-shown):valid {
     gap: 1.6rem;
     background: var(--white-faded);
     margin: 10rem;
-    width: calc(70% - 20rem); }
+    width: 60%; }
     @media only screen and (max-width: 56.25em) {
       .container .blurb {
         width: calc(100% - 10rem);
@@ -402,6 +402,9 @@ textarea:not(:focus):not(:placeholder-shown):valid {
     @media only screen and (max-width: 37.5em) {
       .container .blurb {
         padding: 4rem; } }
+    @media only screen and (min-width: 112.5em) {
+      .container .blurb {
+        width: 50%; } }
     .container .blurb__text {
       text-align: justify; }
 
@@ -419,6 +422,9 @@ textarea:not(:focus):not(:placeholder-shown):valid {
       flex-direction: column;
       padding: 5.5rem 7rem;
       gap: 3rem; } }
+  @media only screen and (min-width: 112.5em) {
+    .why {
+      padding: 7rem 20rem; } }
   .why__support {
     display: flex;
     flex-direction: column;
@@ -517,6 +523,9 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   @media only screen and (max-width: 37.5em) {
     .strengths {
       padding: 5.5rem 7rem; } }
+  @media only screen and (min-width: 112.5em) {
+    .strengths {
+      padding: 7rem 20rem; } }
   .strengths__intro {
     display: flex;
     flex-direction: column;
@@ -559,6 +568,9 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   @media only screen and (max-width: 37.5em) {
     .about-us {
       padding: 5.5rem 7rem; } }
+  @media only screen and (min-width: 112.5em) {
+    .about-us {
+      padding: 7rem 20rem; } }
   .about-us__par1 {
     display: flex;
     align-items: center;
@@ -599,6 +611,9 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   @media only screen and (max-width: 37.5em) {
     .tradition {
       padding: 5rem; } }
+  @media only screen and (min-width: 112.5em) {
+    .tradition {
+      padding: 10rem 20rem; } }
   .tradition__text {
     display: flex;
     flex-direction: column;
@@ -628,7 +643,7 @@ textarea:not(:focus):not(:placeholder-shown):valid {
     text-align: center; }
   .history__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 5rem; }
     @media only screen and (max-width: 56.25em) {
@@ -667,7 +682,7 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   display: flex;
   flex-direction: column;
   padding: 7.5rem 10rem;
-  gap: 2.4rem;
+  gap: 5rem;
   background-color: var(--yellow-2); }
   @media only screen and (max-width: 56.25em) {
     .officers {
@@ -689,8 +704,7 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   .officers__col {
     display: flex;
     flex-direction: column;
-    gap: 2.4rem;
-    flex: 1; }
+    gap: 2.4rem; }
 
 .officer {
   text-align: center;
@@ -714,6 +728,9 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   @media only screen and (max-width: 37.5em) {
     .services {
       padding: 3rem 5.5rem; } }
+  @media only screen and (min-width: 112.5em) {
+    .services {
+      padding: 7rem 20rem; } }
   .services__header {
     display: flex;
     flex-direction: column;
@@ -864,6 +881,9 @@ textarea:not(:focus):not(:placeholder-shown):valid {
     @media only screen and (max-width: 37.5em) {
       .locations__header {
         align-self: end; } }
+    @media only screen and (min-width: 112.5em) {
+      .locations__header {
+        text-align: center; } }
   @media only screen and (max-width: 56.25em) {
     .locations {
       grid-template: 1fr 1fr 1fr / 1fr 1fr;
@@ -873,6 +893,9 @@ textarea:not(:focus):not(:placeholder-shown):valid {
     .locations {
       grid-template: min-content repeat(5, 1fr)/1fr;
       padding: 5.5rem 7rem; } }
+  @media only screen and (min-width: 112.5em) {
+    .locations {
+      padding: 10rem 25rem; } }
 
 .location {
   display: flex;
@@ -881,6 +904,10 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   padding: 0rem;
   gap: 1.2rem; }
   @media only screen and (max-width: 56.25em) {
+    .location {
+      text-align: center;
+      align-items: center; } }
+  @media only screen and (min-width: 112.5em) {
     .location {
       text-align: center;
       align-items: center; } }
