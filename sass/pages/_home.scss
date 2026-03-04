@@ -4,93 +4,158 @@
   background-image: url(../img/home-fountain.png);
   background-size: cover;
   height: 100vh;
+}
 
-  .blurb {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    align-self: center;
-    padding: 8rem;
-    gap: 1.6rem;
-    background: var(--white-faded);
-    margin: 10rem;
-    width: 60%;
+.blurb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: center;
+  padding: 8rem;
+  gap: 1.6rem;
+  background: var(--white-faded);
+  margin: 10rem;
+  width: 60%;
 
-    @media only screen and (max-width: $tablet-portrait) {
-      width: calc(100% - 10rem);
-      margin: 10vh 5rem;
-      padding: 6rem;
-    }
+  @media only screen and (max-width: $tablet-portrait) {
+    width: calc(100% - 10rem);
+    margin: 10vh 5rem;
+    padding: 6rem;
+  }
 
-    @media only screen and (max-width: $phone) {
-      padding: 4rem;
-    }
+  @media only screen and (max-width: $phone) {
+    padding: 4rem;
+  }
 
-    @media only screen and (min-width: $big-desktop) {
-      width: 50%;
-    }
+  @media only screen and (min-width: $big-desktop) {
+    width: 50%;
+  }
 
-    &__text {
-      text-align: justify;
-    }
+  &__text {
+    text-align: justify;
   }
 }
 
-// .home {}
-
-.why {
-  background-color: var(--white);
+.news_preview {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   padding: 7.5rem 10rem;
   gap: 5rem;
+  background-color: var(--white);
 
   @media only screen and (max-width: $tablet-portrait) {
     padding: 6.5rem 8rem;
   }
 
   @media only screen and (max-width: $phone) {
-    flex-direction: column;
     padding: 5.5rem 7rem;
-    gap: 3rem;
   }
 
   @media only screen and (min-width: $big-desktop) {
     padding: 7rem 20rem;
   }
 
-  &__support {
+  &__intro {
     display: flex;
     flex-direction: column;
-    padding: 4rem;
     gap: 1.6rem;
-    flex: 1;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
 
     @media only screen and (max-width: $tablet-portrait) {
-      padding: 0;
+      flex-direction: column;
     }
+  }
+}
 
-    &__body {
-      text-align: justify;
+.news_card_horizontal {
+  flex: 1;
+
+  display: flex;
+  padding: 3.2rem;
+  gap: 1.6rem;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+  @media only screen and (max-width: $phone) {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem var(--gray);
+  }
+
+  &:hover &__read_more {
+    color: var(--blue-2);
+  }
+
+  &:hover &__icon {
+    fill: var(--blue-2);
+  }
+
+  &__img {
+    flex: 1;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
-  &__redirect {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 4rem;
-    gap: 1.6rem;
+  &__content {
     flex: 1;
 
-    @media only screen and (max-width: $tablet-portrait) {
-      padding: 0;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
 
-    &__body {
-      text-align: justify;
-    }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__date {
+    color: var(--blue-1);
+  }
+
+  &__body {
+    flex: 1;
+  }
+
+  &__button {
+    align-self: flex-end;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+  }
+
+  &__read_more {
+    color: var(--gray);
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--gray);
   }
 }
 
@@ -135,11 +200,19 @@
     align-items: center;
     padding: 10rem 12rem;
     gap: 1rem;
+    text-decoration: none;
+    color: var(--blue-4);
 
     background-color: var(--white-faded);
     border-radius: 8px;
 
     flex: 1;
+
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-3px);
+      box-shadow: 0 2rem 3rem var(--yellow-3);
+    }
 
     @media only screen and (max-width: $tablet-portrait) {
       padding: 5rem 6rem;
@@ -167,8 +240,10 @@
   &__source {
     align-self: end;
     color: var(--blue-2);
+
     &__link {
       font-style: italic;
+
       &:link,
       &:visited {
         color: var(--blue-2);

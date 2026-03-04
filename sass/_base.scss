@@ -20,19 +20,19 @@
 // DECLARE COLORS
 
 :root {
-  --blue-1: rgba(59, 128, 159, 1);
-  --blue-2: rgba(25, 64, 116, 1);
-  --blue-3: rgba(8, 31, 81, 1);
-  --blue-4: rgba(11, 17, 38, 1);
-  --yellow-1: rgba(255, 223, 120, 0.7);
-  --yellow-2: rgba(255, 194, 0, 0.7);
-  --yellow-3: rgba(247, 188, 0, 1);
-  --black: rgba(31, 34, 35, 1);
-  --white: rgba(239, 239, 239, 1);
-  --white-faded: rgba(255, 255, 255, 0.75);
-  --gray: rgba(177, 178, 178, 1);
-  --white-on--yellow: rgba(254, 243, 209, 1);
-  --white-true: rgba(255, 255, 255, 1);
+  --blue-1: rgba(59, 128, 159, 1); // #3b809f
+  --blue-2: rgba(25, 64, 116, 1); // #194074
+  --blue-3: rgba(8, 31, 81, 1); // #081f51
+  --blue-4: rgba(11, 17, 38, 1); // #0b1126
+  --yellow-1: rgba(255, 223, 120, 0.7); // #ffdf78b3
+  --yellow-2: rgba(255, 194, 0, 0.7); // #ffc200b3
+  --yellow-3: rgba(247, 188, 0, 1); // #f7bc00
+  --black: rgba(31, 34, 35, 1); // #1f2223
+  --white: rgba(239, 239, 239, 1); // #efefef
+  --white-faded: rgba(255, 255, 255, 0.75); // #ffffffbf
+  --gray: rgba(177, 178, 178, 1); // #b1b2b2
+  --white-on--yellow: rgba(254, 243, 209, 1); // #fef3d1
+  --white-true: rgba(255, 255, 255, 1); // #ffffff
 }
 
 @function base-font-size($pixels) {
