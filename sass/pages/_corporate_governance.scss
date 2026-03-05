@@ -1,0 +1,120 @@
+.corporate-governance {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+
+  &__intro {
+    display: flex;
+    padding: 7.5rem 10rem;
+    gap: 1rem;
+
+    @media only screen and (max-width: $tablet-portrait) {
+      flex-direction: column;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7.5rem 10rem;
+    gap: 3.5rem;
+  }
+
+  &__documents {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    align-self: stretch;
+  }
+
+  &__year {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+    padding: 3rem;
+
+    @media only screen and (max-width: $tablet-portrait) {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 1.5rem;
+    }
+
+    @media only screen and (max-width: $phone) {
+      grid-template-columns: 1fr;
+      padding: 0px;
+    }
+
+    @media only screen and (min-width: $big-desktop) {
+      padding: 5rem;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    height: 32rem;
+    padding: 5rem 2rem;
+    border-radius: 0 0 15px 0;
+    background: var(--cibeles-Blue, #003366);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem var(--gray);
+    }
+
+    &:hover label {
+      color: #fff;
+    }
+
+    &:hover svg {
+      fill: var(--white-fff, #fff);
+    }
+  }
+
+  &__card__title {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      color: var(--white-faded, rgba(255, 255, 255, 0.75));
+    }
+
+    h2 {
+      color: var(--white-fff, #fff);
+    }
+  }
+
+  &__card__line {
+    height: 1px;
+    align-self: stretch;
+    background: var(--white-faded, rgba(255, 255, 255, 0.75));
+  }
+
+  &__card__button {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    align-self: flex-start;
+    cursor: pointer;
+
+    label {
+      color: var(--Gray, #b1b2b2);
+      cursor: pointer;
+    }
+
+    svg {
+      height: 1.5rem;
+      width: 1.5rem;
+      fill: var(--Gray, #b1b2b2);
+      cursor: pointer;
+    }
+  }
+}

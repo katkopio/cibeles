@@ -21,6 +21,7 @@
   --blue-2: rgba(25, 64, 116, 1);
   --blue-3: rgba(8, 31, 81, 1);
   --blue-4: rgba(11, 17, 38, 1);
+  --cibeles-blue: rgba(0, 51, 102, 1);
   --yellow-1: rgba(255, 223, 120, 0.7);
   --yellow-2: rgba(255, 194, 0, 0.7);
   --yellow-3: rgba(247, 188, 0, 1);
@@ -341,6 +342,99 @@ body {
   color: var(--white-faded);
 }
 
+.overlay {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.overlay:target {
+  opacity: 1;
+  visibility: visible;
+}
+.overlay:target .overlay__content {
+  opacity: 1;
+  visibility: visible;
+}
+.overlay__background {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: default;
+}
+.overlay__content {
+  display: flex;
+  flex-direction: column;
+  padding: 5.2rem;
+  gap: 1.6rem;
+  background-color: var(--white);
+  border-radius: 0.8rem;
+  width: 50vw;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 56.25em) {
+  .overlay__content {
+    width: 65vw;
+    padding: 4rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .overlay__content {
+    width: 75vw;
+  }
+}
+.overlay__heading {
+  display: flex;
+  justify-content: space-between;
+}
+.overlay__button {
+  border: none;
+  background-color: inherit;
+}
+.overlay__button:hover {
+  cursor: pointer;
+  transform: translateY(-1px);
+}
+.overlay__icon {
+  height: 2rem;
+  width: 2rem;
+  fill: var(--blue-4);
+}
+.overlay__list {
+  padding-left: 1.6rem;
+  list-style: disc;
+}
+.overlay__close {
+  align-self: start;
+}
+@media only screen and (max-width: 37.5em) {
+  .overlay__close {
+    align-self: center;
+  }
+}
+.overlay__images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.overlay__images img {
+  width: 100%;
+}
+
 .button, .button:link, .button:visited {
   padding: 1.5rem 4rem;
   display: inline-block;
@@ -374,6 +468,12 @@ body {
     display: none;
     visibility: hidden;
   }
+}
+
+.horizontal_bar {
+  height: 0.5rem;
+  width: 100%;
+  background-color: var(--yellow-3);
 }
 
 .small-form {
@@ -528,6 +628,7 @@ textarea:not(:focus):not(:placeholder-shown):valid {
 @media only screen and (max-width: 37.5em) {
   .news_card_horizontal {
     flex-direction: column;
+    padding: 2rem;
   }
 }
 .news_card_horizontal:hover {
@@ -627,9 +728,16 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   align-items: center;
   padding: 10rem 12rem;
   gap: 1rem;
+  text-decoration: none;
+  color: var(--blue-4);
   background-color: var(--white-faded);
   border-radius: 8px;
   flex: 1;
+}
+.kfi__metric:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0 2rem 3rem var(--yellow-3);
 }
 @media only screen and (max-width: 56.25em) {
   .kfi__metric {
@@ -990,87 +1098,112 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   width: 30rem;
 }
 
-.overlay {
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s;
-}
-.overlay__background {
-  background-color: rgba(0, 0, 0, 0.8);
-  height: 100vh;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  cursor: default;
-}
-.overlay__content {
+.corporate-governance {
   display: flex;
   flex-direction: column;
-  padding: 5.2rem;
-  gap: 1.6rem;
   background-color: var(--white);
-  border-radius: 0.8rem;
-  width: 50vw;
-  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%);
+}
+.corporate-governance__intro {
+  display: flex;
+  padding: 7.5rem 10rem;
+  gap: 1rem;
 }
 @media only screen and (max-width: 56.25em) {
-  .overlay__content {
-    width: 65vw;
-    padding: 4rem;
+  .corporate-governance__intro {
+    flex-direction: column;
   }
 }
-@media only screen and (max-width: 37.5em) {
-  .overlay__content {
-    width: 75vw;
-  }
-}
-.overlay:target {
-  opacity: 1;
-  visibility: visible;
-}
-.overlay:target .overlay__content {
-  opacity: 1;
-}
-.overlay__heading {
+.corporate-governance__container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 7.5rem 10rem;
+  gap: 3.5rem;
 }
-.overlay__button {
-  border: none;
-  background-color: inherit;
+.corporate-governance__documents {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  align-self: stretch;
 }
-.overlay__button:hover {
-  cursor: pointer;
-  transform: translateY(-1px);
+.corporate-governance__year {
+  display: flex;
+  flex-direction: column;
 }
-.overlay__icon {
-  height: 2rem;
-  width: 2rem;
-  fill: var(--blue-4);
+.corporate-governance__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3rem;
+  padding: 3rem;
 }
-.overlay__list {
-  padding-left: 1.6rem;
-  list-style: disc;
-}
-.overlay__close {
-  align-self: start;
+@media only screen and (max-width: 56.25em) {
+  .corporate-governance__cards {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.5rem;
+  }
 }
 @media only screen and (max-width: 37.5em) {
-  .overlay__close {
-    align-self: center;
+  .corporate-governance__cards {
+    grid-template-columns: 1fr;
+    padding: 0px;
   }
+}
+@media only screen and (min-width: 112.5em) {
+  .corporate-governance__cards {
+    padding: 5rem;
+  }
+}
+.corporate-governance__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 32rem;
+  padding: 5rem 2rem;
+  border-radius: 0 0 15px 0;
+  background: var(--cibeles-Blue, #003366);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.corporate-governance__card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem var(--gray);
+}
+.corporate-governance__card:hover label {
+  color: #fff;
+}
+.corporate-governance__card:hover svg {
+  fill: var(--white-fff, #fff);
+}
+.corporate-governance__card__title {
+  display: flex;
+  flex-direction: column;
+}
+.corporate-governance__card__title p {
+  color: var(--white-faded, rgba(255, 255, 255, 0.75));
+}
+.corporate-governance__card__title h2 {
+  color: var(--white-fff, #fff);
+}
+.corporate-governance__card__line {
+  height: 1px;
+  align-self: stretch;
+  background: var(--white-faded, rgba(255, 255, 255, 0.75));
+}
+.corporate-governance__card__button {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  align-self: flex-start;
+  cursor: pointer;
+}
+.corporate-governance__card__button label {
+  color: var(--Gray, #b1b2b2);
+  cursor: pointer;
+}
+.corporate-governance__card__button svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: var(--Gray, #b1b2b2);
+  cursor: pointer;
 }
 
 .contact-us {

@@ -41,6 +41,12 @@
   }
 }
 
+.horizontal_bar {
+  height: 0.5rem;
+  width: 100%;
+  background-color: var(--yellow-3);
+}
+
 .small-form {
   display: flex;
   flex-direction: column;
