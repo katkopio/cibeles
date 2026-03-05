@@ -516,6 +516,87 @@ textarea {
   border: 1px solid #cbd2e0;
 }
 
+.news_card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem var(--gray);
+}
+.news_card:hover .news_card__read_more {
+  color: var(--blue-2);
+}
+.news_card:hover .news_card__icon {
+  fill: var(--blue-2);
+}
+.news_card__img {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.news_card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.news_card__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.news_card__title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.news_card__date {
+  color: var(--blue-1);
+}
+.news_card__body {
+  flex: 1;
+}
+.news_card__button {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+.news_card__read_more {
+  color: var(--gray);
+}
+.news_card__icon {
+  height: 2rem;
+  width: 2rem;
+  fill: var(--gray);
+}
+
+.news_card_vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 1.6rem;
+  border-radius: 1rem;
+  background: var(--Neutrals-White, #fff);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.news_card_horizontal {
+  flex: 1;
+  display: flex;
+  padding: 3.2rem;
+  gap: 1.6rem;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+@media only screen and (max-width: 37.5em) {
+  .news_card_horizontal {
+    flex-direction: column;
+    padding: 2rem;
+  }
+}
+
 /* 
 :not(:focus) -> when user leaves input form
 :not(:placeholder-shown) -> and there's no placeholder text (i.e., there is input)
@@ -614,76 +695,6 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   .news_preview__cards {
     flex-direction: column;
   }
-}
-
-.news_card_horizontal {
-  flex: 1;
-  display: flex;
-  padding: 3.2rem;
-  gap: 1.6rem;
-  border-radius: 1rem;
-  background: #fff;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-@media only screen and (max-width: 37.5em) {
-  .news_card_horizontal {
-    flex-direction: column;
-    padding: 2rem;
-  }
-}
-.news_card_horizontal:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem var(--gray);
-}
-.news_card_horizontal:hover .news_card_horizontal__read_more {
-  color: var(--blue-2);
-}
-.news_card_horizontal:hover .news_card_horizontal__icon {
-  fill: var(--blue-2);
-}
-.news_card_horizontal__img {
-  flex: 1;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.news_card_horizontal__img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.news_card_horizontal__content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-.news_card_horizontal__title {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.news_card_horizontal__date {
-  color: var(--blue-1);
-}
-.news_card_horizontal__body {
-  flex: 1;
-}
-.news_card_horizontal__button {
-  align-self: flex-end;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  text-decoration: none;
-}
-.news_card_horizontal__read_more {
-  color: var(--gray);
-}
-.news_card_horizontal__icon {
-  height: 2rem;
-  width: 2rem;
-  fill: var(--gray);
 }
 
 .kfi {
@@ -877,6 +888,7 @@ textarea:not(:focus):not(:placeholder-shown):valid {
 }
 .about-us__par1__img {
   max-width: 100%;
+  min-width: 0;
   height: auto;
 }
 .about-us__par2 {
@@ -892,6 +904,7 @@ textarea:not(:focus):not(:placeholder-shown):valid {
 }
 .about-us__par2__img {
   max-width: 100%;
+  min-width: 0;
   height: auto;
 }
 
@@ -1102,22 +1115,55 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   display: flex;
   flex-direction: column;
   background-color: var(--white);
+  padding: 7.5rem 10rem;
+  gap: 15rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .corporate-governance {
+    padding: 6.5rem 8rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .corporate-governance {
+    padding: 5.5rem 7rem;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  .corporate-governance {
+    padding: 7rem 20rem;
+  }
 }
 .corporate-governance__intro {
   display: flex;
-  padding: 7.5rem 10rem;
-  gap: 1rem;
+  gap: 5rem;
+}
+.corporate-governance__intro__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.corporate-governance__intro__img {
+  flex: 1;
+}
+.corporate-governance__intro__img img {
+  max-width: 100%;
 }
 @media only screen and (max-width: 56.25em) {
   .corporate-governance__intro {
     flex-direction: column;
   }
 }
+@media only screen and (min-width: 112.5em) {
+  .corporate-governance__intro__text {
+    flex: 2;
+  }
+}
 .corporate-governance__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 7.5rem 10rem;
   gap: 3.5rem;
 }
 .corporate-governance__documents {
@@ -1204,6 +1250,72 @@ textarea:not(:focus):not(:placeholder-shown):valid {
   width: 1.5rem;
   fill: var(--Gray, #b1b2b2);
   cursor: pointer;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  padding: 7.5rem 10rem;
+  gap: 15rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .news {
+    padding: 6.5rem 8rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .news {
+    padding: 5.5rem 7rem;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  .news {
+    padding: 7rem 20rem;
+  }
+}
+.news__intro {
+  display: flex;
+  gap: 5rem;
+}
+.news__intro__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.news__intro__img {
+  flex: 1;
+}
+.news__intro__img img {
+  max-width: 100%;
+}
+@media only screen and (max-width: 56.25em) {
+  .news__intro {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  .news__intro__text {
+    flex: 2;
+  }
+}
+.news__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 3.5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .news__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .news__container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .contact-us {
