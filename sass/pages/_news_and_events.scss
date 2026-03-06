@@ -5,6 +5,10 @@
   padding: 7.5rem 10rem;
   gap: 15rem;
 
+  background-image: url("../../img/corp-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
   @media only screen and (max-width: $tablet-portrait) {
     padding: 6.5rem 8rem;
   }
@@ -30,8 +34,13 @@
 
     &__img {
       flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       img {
+        width: 80%;
+        min-width: 0;
         max-width: 100%;
       }
     }
@@ -69,6 +78,10 @@
   background-color: var(--white);
   padding: 7.5rem 10rem;
   gap: 5rem;
+
+  background-image: url("../../img/corp-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @media only screen and (max-width: $tablet-portrait) {
     padding: 6.5rem 8rem;

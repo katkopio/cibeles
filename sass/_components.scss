@@ -41,6 +41,12 @@
   }
 }
 
+.header_with_bar {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
 .horizontal_bar {
   height: 0.5rem;
   width: 100%;

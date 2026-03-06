@@ -168,6 +168,10 @@
   &__checkbox:checked ~ &__nav {
     opacity: 1;
     width: 100%;
+
+    .burger__list {
+      visibility: visible;
+    }
   }
 
   &__list {
@@ -175,6 +179,7 @@
     flex-direction: column;
     gap: 4rem;
     list-style: none;
+    visibility: hidden;
   }
 
   &__link {
