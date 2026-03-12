@@ -180,11 +180,11 @@
     gap: 4rem;
     list-style: none;
     visibility: hidden;
+    text-align: center;
+    white-space: nowrap;
   }
 
   &__link {
-    white-space: nowrap;
-
     &:link,
     &:visited {
       font-size: 3rem;

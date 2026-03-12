@@ -253,8 +253,7 @@ body {
   gap: 4rem;
   list-style: none;
   visibility: hidden;
-}
-.burger__link {
+  text-align: center;
   white-space: nowrap;
 }
 .burger__link:link, .burger__link:visited {
@@ -614,16 +613,6 @@ textarea {
 and the entered text is invalid/valid
 do the following...
 */
-input:not(:focus):not(:placeholder-shown):invalid,
-textarea:not(:focus):not(:placeholder-shown):invalid {
-  border-color: hsl(0, 76%, 50%);
-}
-
-input:not(:focus):not(:placeholder-shown):valid,
-textarea:not(:focus):not(:placeholder-shown):valid {
-  border-color: hsl(120, 76%, 50%);
-}
-
 .send_mail {
   align-self: flex-start;
 }

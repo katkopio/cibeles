@@ -75,27 +75,6 @@
   }
 }
 
-label {
-  font-weight: 500;
-  font-size: 1.4rem;
-  color: var(--blue-4);
-}
-
-input,
-textarea {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 400;
-  line-height: 1.6;
-  font-size: 1.4rem;
-  color: var(--blue-4);
-  outline: none;
-
-  background-color: #fff;
-  width: 100%;
-  border-radius: 0.4rem;
-  border: 1px solid #cbd2e0;
-}
-
 .news_card {
   &:hover {
     transform: translateY(-3px);
@@ -200,16 +179,12 @@ and the entered text is invalid/valid
 do the following...
 */
 
-input:not(:focus):not(:placeholder-shown):invalid,
-textarea:not(:focus):not(:placeholder-shown):invalid {
-  border-color: hsl(0, 76%, 50%);
-}
+// input:not(:focus):not(:placeholder-shown):invalid,
+// textarea:not(:focus):not(:placeholder-shown):invalid {
+//   border-color: hsl(0, 76%, 50%);
+// }
 
-input:not(:focus):not(:placeholder-shown):valid,
-textarea:not(:focus):not(:placeholder-shown):valid {
-  border-color: hsl(120, 76%, 50%);
-}
-
-.send_mail {
-  align-self: flex-start;
-}
+// input:not(:focus):not(:placeholder-shown):valid,
+// textarea:not(:focus):not(:placeholder-shown):valid {
+//   border-color: hsl(120, 76%, 50%);
+// }
